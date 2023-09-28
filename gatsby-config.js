@@ -25,6 +25,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: `${__dirname}/content/posts`,
+        name: "posts",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
       },
@@ -72,7 +79,7 @@ module.exports = {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/bulma-style.sass'], // applies purging only on the bulma css file
+        purgeOnly: ["/bulma-style.sass"], // applies purging only on the bulma css file
         printRejected: true,
       },
     }, // must be after other CSS plugins
