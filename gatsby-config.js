@@ -14,12 +14,34 @@ module.exports = {
         },
       },
     },
+    // {
+    //   // keep as first gatsby-source-filesystem plugin for gatsby image support
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/static/img`,
+    //     name: "uploads",
+    //   },
+    // },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/static/img`,
+        path: `${__dirname}/content/images`,
         name: "uploads",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/images`,
+        name: "images",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/images`,
+        name: "images",
       },
     },
     {
@@ -36,13 +58,13 @@ module.exports = {
         name: "posts",
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/src/img`,
+    //     name: "images",
+    //   },
+    // },
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
