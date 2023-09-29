@@ -1,11 +1,11 @@
 import { Link } from "gatsby";
 import * as React from "react";
 
-import logo from "../../content/images/logo.svg";
-import facebook from "../../content/images/facebook.svg";
-import instagram from "../../content/images/instagram.svg";
-import twitter from "../../content/images/twitter.svg";
-import vimeo from "../../content/images/vimeo.svg";
+import logo from "../../static/images/logo.svg";
+import facebook from "../../static/images/facebook.svg";
+import instagram from "../../static/images/instagram.svg";
+import twitter from "../../static/images/twitter.svg";
+import vimeo from "../../static/images/vimeo.svg";
 
 const Footer = () => {
   return (
